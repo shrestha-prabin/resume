@@ -1,21 +1,17 @@
 import React from "react";
-import { Space, Layout, Typography } from "antd";
-import styles from '../../styles/turing.module.css'
-
-const { Title, Text } = Typography;
 
 const ProfileHeader = () => {
   return (
-    <Space direction="vertical" size="small">
-      <Text className={styles.name}>Prabin Shrestha</Text>
+    <div className="space-y-2">
+      <div className="text-xl font-bold">Prabin Shrestha</div>
 
-      <Text type="secondary" className={styles.description}>
+      <div className="text-base text-gray-500">
         Software engineer with 4+ years of professional work experience
         specialized in development of mobile and web applications. Open to
         taking on new opportunities, learn new programming languages and
         frameworks, and follow best software design practices.
-      </Text>
-    </Space>
+      </div>
+    </div>
   );
 };
 

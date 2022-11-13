@@ -3,11 +3,11 @@ import React from "react";
 
 const ProjectItem = ({ name, link, info, skills }: any) => {
   return (
-    <div style={{ marginTop: 8, marginBottom: 32 }}>
-      <div style={{ fontWeight: "bold" }}>{name}</div>
+    <div className="mt-2 mb-8">
+      <div className="font-bold">{name}</div>
       {link && <a href={link}>{link}</a>}
-      <p style={{ whiteSpace: "pre-wrap" }}>{info}</p>
-      <div style={{ color: "#888888" }}>{skills}</div>
+      <p className="text-gray-900" style={{ whiteSpace: "pre-wrap" }}>{info}</p>
+      <div className="text-gray-800 ">{skills}</div>
     </div>
   );
 };
@@ -15,26 +15,13 @@ const ProjectItem = ({ name, link, info, skills }: any) => {
 const WorkHistoryItem = ({ role, name, date, duration, projects }: any) => {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="flex flex-row justify-between">
         <div>
-          <div style={{ fontSize: 17, fontWeight: "bold" }}>{role}</div>
+          <div className="text-lg font-bold">{role}</div>
           <div>{name}</div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "end",
-            fontSize: 12,
-          }}
-        >
+        <div className="flex flex-col items-end text-xs">
           <div>{date}</div>
           <div>{duration}</div>
         </div>
@@ -44,14 +31,13 @@ const WorkHistoryItem = ({ role, name, date, duration, projects }: any) => {
         <ProjectItem {...item} />
       ))}
 
-      <ProjectItem />
     </div>
   );
 };
 
-const WorkHistory = () => {
+const WorkHistory = ({ className }: any) => {
   return (
-    <Timeline>
+    <Timeline className={className}>
       <Timeline.Item>
         <WorkHistoryItem
           role="iOS Developer"
@@ -119,20 +105,21 @@ const WorkHistory = () => {
               name: "Voyageons Nepal Website",
               link: "https://voyageonsnepal.com/",
               info: ``,
-              skills: 'NextJS, React, Tailwind CSS, Formik, Paypal SDK'
+              skills: "NextJS, React, Tailwind CSS, Formik, Paypal SDK",
             },
             {
               name: "Paradise Institute Website",
               link: "",
               info: ``,
-              skills: 'NextJS, React, Tailwind CSS'
+              skills: "NextJS, React, Tailwind CSS",
             },
             {
               name: "BPazes Mobile Application",
               link: "",
               info: ``,
-              skills: 'React, React Native, Redux, REST/RESTful APIs, E-Commerce'
-            }
+              skills:
+                "React, React Native, Redux, REST/RESTful APIs, E-Commerce",
+            },
           ]}
         />
       </Timeline.Item>

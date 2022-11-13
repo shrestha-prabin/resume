@@ -1,12 +1,10 @@
 import React from "react";
-import styles from '../../styles/typography.module.css'
 
 const IconTitle = ({ icon, title }: any) => {
   return (
-    <div>
-      <span className={styles.icon}>{icon}</span>
-      &nbsp;&nbsp;&nbsp;
-      <span className={styles.title}>{title}</span>
+    <div className="flex row items-center space-x-2">
+      {icon}
+      <div className="font-bold text-md">{title}</div>
     </div>
   );
 };

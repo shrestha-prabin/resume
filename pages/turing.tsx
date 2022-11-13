@@ -5,7 +5,7 @@ import ProfileHeader from "../components/turing/ProfileHeader";
 import TechnicalSkills from "../components/turing/TechnicalSkills";
 import LeftRightContainer from "../components/turing/LeftRightContainer";
 import IconTitle from "../components/turing/IconTitle";
-import { CodeFilled, AppleFilled, AppstoreFilled } from "@ant-design/icons";
+import { CodeOutlined, AppleFilled, AppstoreFilled } from "@ant-design/icons";
 import WorkHistory from "../components/turing/WorkHistory";
 import Education from "../components/turing/Education";
 
@@ -13,38 +13,44 @@ const { Title, Text } = Typography;
 
 const Turing = () => {
   return (
-    <Layout>
-      <Layout.Content className={styles.container}>
+    <div className="bg-slate-100 font-gordita">
+      <div className="bg-white max-w-4xl mx-auto p-6 space-y-6 divide-y">
+        
         <ProfileHeader />
-
-        <Divider />
 
         <LeftRightContainer
           leftChildren={
-            <IconTitle icon={<CodeFilled style={{ color: '#888'}} />} title="Technical Skills" />
+            <IconTitle
+              icon={
+                <CodeOutlined className="text-xl" style={{ color: "#888" }} />
+              }
+              title="Technical Skills"
+            />
           }
           rightChildren={<TechnicalSkills />}
         />
 
-        <Divider />
-
         <LeftRightContainer
           leftChildren={
-            <IconTitle icon={<img src='/icons/work.svg' />} title="Work History" />
+            <IconTitle
+              icon={<img src="/icons/work.svg" />}
+              title="Work History"
+            />
           }
           rightChildren={<WorkHistory />}
         />
 
-        <Divider />
-
         <LeftRightContainer
           leftChildren={
-            <IconTitle icon={<img src='/icons/school.svg' />} title="Education" />
+            <IconTitle
+              icon={<img src="/icons/school.svg" />}
+              title="Education"
+            />
           }
           rightChildren={<Education />}
         />
-      </Layout.Content>
-    </Layout>
+      </div>
+    </div>
   );
 };
 
