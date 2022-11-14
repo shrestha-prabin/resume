@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         gordita: ['Gordita', 'sans-serif']
+      },
+      listStyleType: {
+        dash: `'- '`
       }
     },
   },
