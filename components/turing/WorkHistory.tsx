@@ -132,7 +132,7 @@ const data = [
         name: "Brooklyn College App",
         link: "https://play.google.com/store/apps/details?id=com.es4n.attendance",
         overview:
-          "A mobile application aimed to improve quality. Teachers can view their assigned class routines and record attendance of the students. Students can read course books and notes.",
+          "A mobile application aimed to improve education quality. Teachers can view their assigned class routines and record attendance of the students. Students can read course books and notes.",
 
         info: [
           "Designed and developed the user interfaces and business logic of the application that satisfied client requirements.",
@@ -141,7 +141,7 @@ const data = [
           "Development of backend system in Laravel.",
           "Development of admin panel in React for performing CRUD operations of teachers, students, courses, class routines and books.",
           "Generation of downloadable attendance reports as excel file.",
-          "Integration of Push Notification, SMS Gateway and mail server to help facilitate message and reports delivery to end user.",
+          "Integration of Push Notification, SMS Gateway and mail server to help facilitate delivery message and reports to end user.",
         ],
         skills: [
           "Laravel",
@@ -165,8 +165,7 @@ const data = [
           "An admin panel development to keep track of registered users and their details.",
 
           "Priyam All In One Digital Book",
-          "Priyam Coloring A",
-          "Priyam Coloring B",
+          "Priyam Coloring A & B",
           "Priyam LKG Books"
         ],
         skills: ["React Native", "ReactJS", "Laravel"],
@@ -204,7 +203,7 @@ const WorkHistoryItem = ({ role, name, date, duration, projects }: any) => {
           <div>{name}</div>
         </div>
 
-        <div className="flex flex-col items-end text-xs">
+        <div className="flex flex-col items-end text-xs text-right">
           <div>{date}</div>
           <div>{duration}</div>
         </div>
