@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: "Diyo Banquet",
+    link: "http://diyo.com.np/",
+  },
+  {
+    title: "Arunima Charity",
+    link: "https://www.arunimacharity.org.np/",
+  },
+  {
     title: "BWN Survey",
     link: "https://survey.bwn.com.np/",
   },
