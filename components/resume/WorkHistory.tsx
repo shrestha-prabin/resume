@@ -6,16 +6,6 @@ const data = [
     name: "Nepal Payment Solution (DigiHub Pvt. Ltd.)",
     date: "October 2020 - September 2022",
     duration: "1 yrs 11 mos",
-    list: ["Development of "],
-    skills: [
-      "iOS",
-      "Swift",
-      "Push Notifications",
-      "Google Maps SDK",
-      "Dynamic Form",
-      "Kotlin",
-    ],
-
     projects: [
       {
         name: "YoApp",
@@ -186,7 +176,7 @@ const data = [
 const ProjectItem = ({ name, link, overview, info, skills }: any) => {
   return (
     <div className="mt-2 mb-8">
-      <div className="font-semibold">{name}</div>
+      <div className="font-bold">{name}</div>
       {link && (
         <a className="text-xs" href={link}>
           {link}
@@ -216,14 +206,14 @@ const WorkHistoryItem = ({ role, name, date, duration, projects }: any) => {
     <div>
       <div className="flex flex-row justify-between">
         <div>
-          <div className="text-lg font-bold">{name}</div>
-          <div>{date}</div>
+          <div className="text-lg font-bold">{role}</div>
+          <div>{name}</div>
         </div>
 
-        {/* <div className="flex flex-col items-end text-xs text-right">
+        <div className="flex flex-col items-end text-xs text-right">
           <div>{date}</div>
           <div>{duration}</div>
-        </div> */}
+        </div>
       </div>
 
       {projects.map((item: any, i: number) => (

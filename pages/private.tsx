@@ -1,5 +1,3 @@
-import React from "react";
-
 const projects = [
   {
     title: "BWN Survey",
@@ -31,8 +29,8 @@ const projects = [
     link: "https://play.google.com/store/apps/details?id=com.brooklyn",
   },
   {
-    title: 'Academic Certificate Generator',
-    link: '',
+    title: "Academic Certificate Generator",
+    link: "",
   },
   {
     title: "Relife Wellness Nepal Pvt. Ltd",
@@ -54,23 +52,32 @@ const projects = [
     link: "",
   },
   {
-    title: 'PrabhuPAY',
-    link: '',
+    title: "Document Vault",
+    link: "",
   },
   {
-    title: 'YoApp',
-    link: ''
+    title: "Mode23",
+    link: "",
   },
   {
-    title: 'Kisan',
-    link: '',
+    title: "PrabhuPAY",
+    link: "",
   },
   {
-    title: 'Sim Management',
-    link: ''
-  },{
-    title: 'NIBL Thaili',
-    link: '',
+    title: "YoApp",
+    link: "",
+  },
+  {
+    title: "Kisan",
+    link: "",
+  },
+  {
+    title: "Sim Management",
+    link: "",
+  },
+  {
+    title: "NIBL Thaili",
+    link: "",
   },
 ];
 
@@ -79,7 +86,7 @@ const PrivatePage = () => {
     <div>
       {projects.map((item, i) => {
         return (
-          <div className="space-x-1 container mx-auto">
+          <div key={i} className="space-x-1 container mx-auto">
             <span>{item.title}</span>
             <a href={item.link}>{item.link}</a>
           </div>
